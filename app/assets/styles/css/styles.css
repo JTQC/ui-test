@@ -5,8 +5,13 @@
   padding: 0;
 }
 
+html {
+    height: 100%;
+}
+
 body {
   background: #462350;
+  height: 100%;
 }
 
 h1, h2 {
@@ -102,11 +107,13 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 5px;
+  height: 100%;
   padding: 0 0.5em;
 }
 
 .container {
   background: #ffffff;
+  height: 100%;
   overflow-y: auto;
 }
 .container .row {
@@ -144,14 +151,14 @@ main {
 .column-one {
   display: grid;
   grid-template-rows: 1fr 1fr;
-  max-height: 95.5%;
+  height: 100%;
 }
 .column-one .container:last-of-type {
   margin-top: 0.9em;
 }
 
 .column-two {
-  max-height: 95.5%;
+  height: 100%;
   overflow-y: auto;
 }
 .column-two .row.large {
